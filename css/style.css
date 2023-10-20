@@ -1,0 +1,212 @@
+:root{
+    --section-padding:25px;
+    --section-color:#eee;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: black;
+}
+.navbar button{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+ }
+nav svg{
+    color: white;
+    font-size: 40px;
+}
+nav img{
+    width: 100px;
+    height: 80px;
+    background-color: white;
+}
+.navbar .nav-link{
+    color: white;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color:#00bcd4;
+    
+}
+nav .avtive{
+    color: #00bcd4;
+}
+.landing{
+    height: calc(100vh - 90px);
+    background-image:url(/images/landing1.jpg) ;
+    background-size:cover;
+    position: relative;
+    padding-bottom: var(--section-padding);
+}
+.landing::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0 ,40%);
+    
+}
+.landing .text{
+    position: relative;
+    background-color: #98888845;
+    padding: 25px;
+    left: 0;
+    top: 50%;
+    transform: translatX(-50%);
+    z-index: 1;
+    color: white;
+}
+.landing img{
+    position: absolute;
+    width: 500px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* start services  */
+.services{
+    background-color: #eee;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+   
+}
+.services .box{
+    background-color: white;
+    transition: .3s;
+}
+
+.services .box:hover {
+ background-color: #00bcd4;
+ color: white;
+
+}
+.services img{
+    width: 100px;
+    
+}
+
+/* end services  */
+
+
+/* start our works */
+.works{
+    background-color: #eee;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    
+}
+.works .box {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.works .box::before{
+    content: attr(statu);
+    position: absolute;
+    background-color: rgb(36, 37, 47 );
+    width: calc(100% );
+    height: calc(100% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 2.5rem;
+    transform: translateY(calc(-100% - 5px));
+}
+.works .box:hover::before{
+    transform: translateX(0);
+}
+.works .box img{
+padding: 5px;
+}
+.works svg{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+  
+}
+.works .text h4{
+ background-color: #746d66c2;
+ font-size: 32px;
+ 
+}
+
+/* end our works */
+
+/* start logo */
+.logo{
+    background-color: black;
+}
+.logo video{
+    width: 400px;
+    height: 50vh;
+    margin: auto;
+}
+
+/* end ologo */
+
+
+/* start contact  */
+
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #8380804f;
+    
+}
+.contact .image-holder{
+   
+    margin-left: 0;
+}
+.contact a{
+    text-decoration: none;
+    
+}
+.contact .social{
+    margin-bottom: 40px;
+}
+.contact span{
+    padding-left: 10px;
+    font-size: 24px;
+    color: black;
+}
+.contact .youtube svg{
+   color: #ff0000;
+}
+.contact .facebook svg{
+    color: #1877f2;
+}
+.contact .tiktok svg{
+    color: #000000;
+}
+.contact .instgram svg{
+    color: #c13584;
+}
+.contact .whatsapp svg{
+    color: #25d366;
+}
+/* end contact  */
+/* start footer */
+
+.footer{
+    background-color: #111320;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 20px;
+  }
+  .footer span{
+    color: #00bcd4;
+    font-weight: bold;
+  }
+  
+  /* end footer */
