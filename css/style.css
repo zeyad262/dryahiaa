@@ -36,7 +36,7 @@ nav .avtive{
 }
 .landing{
     height: calc(100vh - 90px);
-    background-image:url(./images/landing1.jpg) ;
+    background-image:url('../images/landing1.jpg') ;
     background-size:cover;
     position: relative;
     padding-bottom: var(--section-padding);
