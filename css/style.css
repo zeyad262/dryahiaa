@@ -192,6 +192,9 @@ padding: 5px;
 .contact .whatsapp svg{
     color: #25d366;
 }
+.contact img{
+    width: 300px;
+}
 /* end contact  */
 /* start footer */
 
